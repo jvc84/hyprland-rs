@@ -255,7 +255,7 @@ pub struct Client {
     /// Group members
     pub grouped: Vec<Box<Address>>,
     /// Tags of window
-    pub tags: String,
+    pub tags: Option<String>,
     /// Is this window print on screen
     pub mapped: bool,
     /// The swallowed window
