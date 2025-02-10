@@ -254,12 +254,12 @@ pub struct Client {
     pub pinned: bool,
     /// Group members
     pub grouped: Vec<Box<Address>>,
+    /// Tags of window
+    pub tags: String,
     /// Is this window print on screen
     pub mapped: bool,
     /// The swallowed window
     pub swallowing: Option<Box<Address>>,
-    /// Tags of window
-    pub tags: String,
     /// When was this window last focused relatively to other windows? 0 for current, 1 previous, 2 previous before that, etc
     #[serde(rename = "focusHistoryID")]
     pub focus_history_id: i8,
